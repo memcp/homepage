@@ -108,6 +108,10 @@ button:hover {
   padding: 16px 24px;
 }
 
+.job {
+  margin-bottom: 16px;
+}
+
 .working-dates {
   margin-top: 10px;
   font-weight: 500;
@@ -116,4 +120,29 @@ button:hover {
 
 .contact {
   padding: 16px 24px;
+
+}
+
+.tech-stack {
+  margin-top: 4px;
+}
+
+.html-badge, .css-badge, .javascript-badge {
+  padding: 1px 4px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.html-badge {
+  background-color: #089327;
+}
+
+.css-badge {
+  background-color: #bb4859;
+}
+
+.javascript-badge {
+  background-color: #eaa42c;
 }
