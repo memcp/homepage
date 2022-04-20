@@ -127,7 +127,7 @@ button:hover {
   margin-top: 4px;
 }
 
-.html-badge, .css-badge, .javascript-badge {
+.html-badge, .css-badge, .javascript-badge, .react-badge {
   padding: 1px 4px;
   border-radius: 4px;
   color: white;
@@ -145,4 +145,8 @@ button:hover {
 
 .javascript-badge {
   background-color: #eaa42c;
+}
+
+.react-badge {
+  background-color: #13afef;
 }
