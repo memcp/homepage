@@ -10,6 +10,7 @@ h1 {
 }
 
 h4 {
+  margin-top: 0;
   text-transform: uppercase;
 }
 
@@ -35,13 +36,18 @@ button:hover {
 
 .container {
   margin: 0 auto;
-  max-width: 70%;
+  max-width: 1440px;
   width: 100%;
 }
 
 .project-container {
   display: flex;
   padding: 16px 24px;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
   flex-direction: column;
 }
 
@@ -120,7 +126,6 @@ button:hover {
 
 .contact {
   padding: 16px 24px;
-
 }
 
 .tech-stack {
@@ -128,29 +133,90 @@ button:hover {
 }
 
 .html-badge, .css-badge, .javascript-badge, .react-badge, .redux-badge {
+  margin-right: 4px;
   padding: 1px 4px;
   border-radius: 4px;
-  color: white;
+  color: #333333;
   font-weight: 500;
   font-size: 14px;
 }
 
 .html-badge {
-  background-color: #089327;
+  border: 1px solid #089327;
 }
 
 .css-badge {
-  background-color: #bb4859;
+  border: 1px solid #bb4859;
 }
 
 .javascript-badge {
-  background-color: #eaa42c;
+  border: 1px solid #eaa42c;
 }
 
 .react-badge {
-  background-color: #13afef;
+  border:  1px solid #13afef;
 }
 
 .redux-badge {
-  background-color: #a765ab;
+  border: 1px solid #a765ab;
+}
+
+.page-switching {
+  display: flex;
+  gap: 10px;
+  padding: 16px 24px;
+}
+
+.arrow {
+  border: solid #333333;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.page-switching__left,
+.page-switching__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+
+  width: 50px;
+  height: 25px;
+  border: 2px solid #E0E0E0;
+}
+
+.page-switching__left:hover,
+.page-switching__right:hover {
+  cursor: pointer;
+  border: 2px solid #333333;
+}
+
+@media screen and (max-width: 600px) {
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-container {
+    padding: 8px 0;
+  }
+
+  .jobs {
+    padding: 8px 0;
+  }
+
+  .contact {
+    padding: 8px 0;
+  }
 }
