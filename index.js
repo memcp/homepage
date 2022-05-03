@@ -8,7 +8,7 @@ const projects = [
     description: `Web application, allows add an items into cart and make an order`,
     demoURL: baseURL + 'online-shop/',
     sourceURL: 'https://github.com/ilyasgaripov97/online-shop',
-    badges: ['html', 'css', 'javascript'],
+    badges: ['html', 'css', 'javascript', 'react', 'redux'],
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
     description: `Web application to convert from one currency to another`,
     demoURL: baseURL + 'currency-converter/',
     sourceURL: 'https://github.com/ilyasgaripov97/currency-converter',
-    badges: ['html', 'css', 'javascript'],
+    badges: ['html', 'css', 'javascript', 'react'],
   },
   {
     id: 3,
