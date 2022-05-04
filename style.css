@@ -57,10 +57,6 @@ button:hover {
   height: 32px;
 }
 
-.project:hover {
-  /*cursor: pointer;*/
-}
-
 .project-title {
   display: flex;
   align-items: center;
@@ -219,4 +215,9 @@ button:hover {
   .contact {
     padding: 8px 0;
   }
+
+  .page-switching {
+    padding: 8px 0;
+  }
+
 }

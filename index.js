@@ -1,44 +1,5 @@
-const baseURL = 'http://68.183.211.8/projects/';
+import { projects } from './projects.js'
 
-const projects = [
-  {
-    id: 1,
-    page: 1,
-    title: 'Online Shop',
-    description: `Web application, allows add an items into cart and make an order`,
-    demoURL: baseURL + 'online-shop/',
-    sourceURL: 'https://github.com/ilyasgaripov97/online-shop',
-    badges: ['html', 'css', 'javascript', 'react', 'redux'],
-  },
-  {
-    id: 2,
-    page: 1,
-    title: 'Currency Converter',
-    description: `Web application to convert from one currency to another`,
-    demoURL: baseURL + 'currency-converter/',
-    sourceURL: 'https://github.com/ilyasgaripov97/currency-converter',
-    badges: ['html', 'css', 'javascript', 'react'],
-  },
-  {
-    id: 3,
-    page: 1,
-    title: 'Etch A Sketch',
-    description: `Drawing web application, which has three different drawing modes: rgb, darken and default. The "rgb" mode,
-color for each cell picked randomly. The "darken" mode represent scales of black and black color used as"default`,
-    demoURL: baseURL + 'etch-a-sketch/',
-    sourceURL: 'https://github.com/ilyasgaripov97/etch-a-sketch',
-    badges: ['html', 'css', 'javascript'],
-  },
-  {
-    id: 4,
-    page: 1,
-    title: 'Tic Tac Toe',
-    description: `Tic Tac Toe game, four by four grid`,
-    demoURL: baseURL + 'etch-a-sketch/',
-    sourceURL: 'https://github.com/ilyasgaripov97/etch-a-sketch',
-    badges: ['html', 'css', 'javascript'],
-  },
-];
 
 const projectsContainer = document.querySelector('.projects');
 const leftSwitch = document.querySelector('.page-switching__left');
