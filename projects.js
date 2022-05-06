@@ -34,7 +34,7 @@ color for each cell picked randomly. The "darken" mode represent scales of black
     page: 1,
     title: 'Feed',
     description: `Infinite feed of posts`,
-    demoURL: baseURL + 'etch-a-sketch/',
+    demoURL: baseURL + 'feed/',
     sourceURL: 'https://github.com/ilyasgaripov97/feed',
     badges: ['html', 'css', 'javascript'],
   },
