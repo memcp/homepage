@@ -1,4 +1,4 @@
-const baseURL = 'http://68.183.211.8/projects/';
+const baseURL = 'http://www.ilyasgaripov.ru/projects/';
 
 export const projects = [
   {
@@ -32,10 +32,19 @@ color for each cell picked randomly. The "darken" mode represent scales of black
   {
     id: 4,
     page: 1,
+    title: 'Feed',
+    description: `Infinite feed of posts`,
+    demoURL: baseURL + 'etch-a-sketch/',
+    sourceURL: 'https://github.com/ilyasgaripov97/feed',
+    badges: ['html', 'css', 'javascript'],
+  },
+  {
+    id: 5,
+    page: 2,
     title: 'Tic Tac Toe',
     description: `Tic Tac Toe game, four by four grid`,
     demoURL: baseURL + 'etch-a-sketch/',
-    sourceURL: 'https://github.com/ilyasgaripov97/etch-a-sketch',
+    sourceURL: 'https://github.com/ilyasgaripov97/tic-tac-toe',
     badges: ['html', 'css', 'javascript'],
   },
 ];
