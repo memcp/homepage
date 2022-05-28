@@ -31,6 +31,9 @@ figure {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
   margin-bottom: 48px;
 }
 
@@ -69,10 +72,6 @@ img {
   width: 100%;
 }
 
-li {
-  padding: 12px 0;
-}
-
 section.skills {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(6, 96px);
@@ -109,7 +108,7 @@ section.skills {
 }
 
 aside {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 150px;
   padding: 0 48px;
@@ -117,4 +116,17 @@ aside {
   border-left: 2px solid #f6f6f6;
   font-size: 20px;
   background-color: #ffffff;
+  min-height: 400px;
+}
+
+ul, ol {
+  padding: 0 24px;
+}
+
+li {
+  padding: 6px 0;
+}
+
+.projects {
+  height: 4000px;
 }

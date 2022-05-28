@@ -1,8 +1,8 @@
 import { technologies } from './technologies.js';
 
 const asideContainer = document.querySelector('aside');
+const skillsContainer = document.querySelector('.skills');
 const skills = document.querySelectorAll('.skill');
-const template = document.createElement('template');
 
 const clearAside = () => {
   asideContainer.innerHTML = '';
@@ -20,5 +20,16 @@ const showSelectedTechnology = (e) => {
 skills.forEach((skill) => {
   skill.addEventListener('focus', (e) => showSelectedTechnology(e));
   skill.addEventListener('mouseenter', (e) => showSelectedTechnology(e));
-  skill.addEventListener('mouseleave', () => clearAside());
+});
+
+document.addEventListener('click', (e) => {
+  let isClickInsideSkills = skillsContainer.contains(e.target);
+
+  if (!isClickInsideSkills) {
+    clearAside();
+  }
+});
+
+skillsContainer.addEventListener('mouseleave', () => {
+  clearAside();
 });
