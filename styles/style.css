@@ -3,6 +3,7 @@ body {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  background-color: #fefefe;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -125,6 +126,13 @@ ul, ol {
 
 li {
   padding: 6px 0;
+  line-height: 1.58;
+}
+
+code {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  padding: 2px;
 }
 
 .projects {
