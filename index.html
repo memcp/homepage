@@ -13,8 +13,9 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/responsive.css">
 
-  <title>Ilyas Garipov</title>
+  <title>Ильяс Гарипов</title>
 </head>
 <body>
   <nav>
@@ -30,11 +31,17 @@
   <header>
     <h1>Ильяс Гарипов</h1>
     <p>
-      Привет, я <strong>разработчик</strong>, в данный момент изучаю <strong>веб технологии</strong>. Забочусь о том
-      чтобы писать <em>эффективный</em>, <em>легко читаемый</em> и <em>поддерживаемый</em> код.
+      Привет, я начинающий <strong>веб разработчик</strong>. Занимаюсь фронтендом и бэкендом. Мне интересены алгоритмы, архитектура
+      и чистый код. На этом сайте можно найти мои пет-проекты или заметки про разработку.
     </p>
   </header>
   <main>
+    <h2 id="projects">Проекты</h2>
+    <section class="projects">
+      <em>Секция в разработке</em>
+      <div class="project">
+      </div>
+    </section>
     <h2 id="skills">Навыки</h2>
     <section class="skills">
       <figure class="skill" tabindex="0">
@@ -86,13 +93,61 @@
         <figcaption class="skill__title" lang="en">Python</figcaption>
       </figure>
     </section>
-    <h2 id="projects">Проекты</h2>
-    <section class="projects">
-      <div class="project">
-
+    <h2 id="experience">Опыт</h2>
+    <section class="experience">
+<!--      <em>Секция в разработке</em>-->
+      <div class="job">
+        <div class="job__period">
+          <div class="job__from">Июль 2021</div>
+          <div class="job__delimiter">-</div>
+          <div class="job__to">Февраль 2022</div>
+        </div>
+        <div class="job__description">
+          <p>Поддержка и разработка системы управления персоналом:</p>
+          <ul class="job__tasks-done">
+            <li>
+              Исправил ошибку в цепочке закрытия приказа на увольнение во время временного перемещения работника.
+            </li>
+            <li>
+              Создание конвертера из архивов <abbr title="Государственный Адресный Реестр">ГАР</abbr> в формат
+              <abbr title="Федеральная Информационная Адресная Система">ФИАС</abbr> на языке Python.
+              Были реализованы следующие функции: <em>парсинг XML файлов</em> из архива, <em>создание запроса</em> для
+              формирования совместимых с внутренним представлением в системе, а также <em>формирование директорий</em>
+              адресов регионов для дальнейшей отправки на сервера.
+            </li>
+            <li>
+              Написал часть системы для выбора типа отчёта word/excel.
+            </li>
+            <li>
+              Доработал форму бланка <abbr title="Налог на доходы физических лиц">2-НДФЛ</abbr> согласно требованиям
+              изменившегося законодательства в части изменения отображения полей в rtf файла.
+            </li>
+            <li>
+              Сгенерировал HTML документацию для таблиц.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="experience__dots">
+        <div class="experience__dot"></div>
+        <div class="experience__dot"></div>
+        <div class="experience__dot"></div>
+      </div>
+      <div class="job">
+        <div class="job__period">
+          <div class="job__from">Февраль 2020</div>
+          <div class="job__delimiter">-</div>
+          <div class="job__to">Июль 2021</div>
+        </div>
+        <div class="job__description">
+          <p>Поддержка системы управления персоналом:</p>
+          <ul>
+            <li>Исправление ошибок в хранимых процедурах PL/pgSQL.</li>
+            <li>Доработка бланков отчётов и приказов.</li>
+          </ul>
+        </div>
       </div>
     </section>
-    <h2 id="experience">Опыт</h2>
     <h2 id="contacts">Контакты</h2>
     <section class="contacts">
       <a href="https://telegram.me/ilyasgaripov97" target="_blank">Телеграм</a>
@@ -100,9 +155,6 @@
       <a href="https://github.com/ilyasgaripov97" target="_blank">Гитхаб</a>
     </section>
   </main>
-  <aside>
-
-  </aside>
   <footer>
   </footer>
 

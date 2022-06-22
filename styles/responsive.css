@@ -1,0 +1,74 @@
+@media screen and (min-width: 1600px) and (max-width: 1700px) {
+  aside {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  aside {
+    width: 330px
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1440px) {
+  aside {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1250px) {
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+  section.skills {
+    grid-template: repeat(2, 1fr) / repeat(6, 96px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section.skills {
+    grid-template: repeat(2, 1fr) / repeat(auto-fit, 96px);
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 720px) {
+  section.skills {
+    grid-template: repeat(2, 1fr) / repeat(auto-fit, 96px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  body {
+    padding: 8px;
+  }
+
+  nav {
+    display: none;
+    position: static;
+  }
+
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  nav > ul > li a {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 64px;
+  }
+  nav > ul > li a {
+    font-size: 11px;
+  }
+}
