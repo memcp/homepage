@@ -164,7 +164,7 @@ code {
   width: 75%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
 
   header > p {
     width: 100%;
