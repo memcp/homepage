@@ -171,6 +171,10 @@ code {
   border: none;
 }
 
+.project__project-link > p {
+  width: 100%;
+}
+
 .project__link:hover {
   cursor: pointer;
   border: none;
