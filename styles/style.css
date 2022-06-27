@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   padding: 0;
   color: #2d2d2d;
+}
+
+header > p {
+  width: 60%;
 }
 
 h1 {
@@ -56,7 +61,7 @@ nav > ul {
 
 p {
   padding-top: 16px;
-  width: 60%;
+  width: 70%;
 }
 
 a {
@@ -80,7 +85,7 @@ header > p {
   width: 70%;
 }
 
-img {
+.skills > img {
   width: 100%;
 }
 
@@ -135,8 +140,58 @@ code {
   padding: 2px;
 }
 
-.experience {
+.project-link {
+  padding: 8px;
+}
 
+.project > p {
+  width: 100%;
+}
+
+.project-wrapper {
+  margin-top: 24px;
+  border: 1px solid #2d2d2d;
+  padding: 8px;
+  width: 70%;
+}
+
+.project-wrapper:hover {
+  box-shadow: 4px 4px 0 orange;
+}
+
+.project-link, .project-link:hover {
+  border-bottom: initial;
+}
+
+.project__link {
+  margin-top: 8px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  border: none;
+}
+
+.project__link:hover {
+  cursor: pointer;
+  border: none;
+}
+
+.project__link:focus {
+  border: none;
+}
+
+p.small {
+  font-size: 16px;
+}
+
+.project__under {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.reference:hover {
+  color: #d9327c
 }
 
 .job__period {
@@ -164,6 +219,7 @@ code {
   width: 75%;
 }
 
+
 @media screen and (max-width: 720px) {
 
   header > p {
@@ -176,6 +232,16 @@ code {
 
   .job__description > p{
     font-size: 16px;
+    width: 100%;
+  }
+
+  .projects > a, p {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .project-wrapper {
+    margin-top: 16px;
     width: 100%;
   }
 }
